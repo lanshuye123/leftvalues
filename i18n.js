@@ -109,7 +109,7 @@ const addLanguage = (code, properties) => {
 }
 
 const getl10n = async (code) => {
-  const url = `/lang/lang_${code}.json`
+  const url = `/leftvalues/lang/lang_${code}.json`
   await window.fetch(url)
     .then(res => res.json())
     .then(out => addLanguage(code, out))
